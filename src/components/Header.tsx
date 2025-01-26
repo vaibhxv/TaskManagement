@@ -35,7 +35,7 @@ export function Header({
           <span className="font-semibold text-xl">TaskBuddy</span>
           <div className="relative">
             <img
-              src={user.photoURL || 'https://ui-avatars.com/api/?name=' + encodeURIComponent(user.name)}
+              src={user.avatarURL || 'https://ui-avatars.com/api/?name=' + encodeURIComponent(user.name)}
               alt={user.name}
               className="w-8 h-8 rounded-full cursor-pointer"
               onClick={() => setShowUserMenu(!showUserMenu)}
@@ -135,7 +135,7 @@ export function Header({
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
               <img
-                src={user.photoURL || 'https://ui-avatars.com/api/?name=' + encodeURIComponent(user.name)}
+                src={user.avatarURL || 'https://ui-avatars.com/api/?name=' + encodeURIComponent(user.name)}
                 alt={user.name}
                 className="w-8 h-8 rounded-full"
               />

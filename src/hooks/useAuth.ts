@@ -14,7 +14,7 @@ export function useAuth() {
           id: firebaseUser.uid,
           name: firebaseUser.displayName || 'User',
           email: firebaseUser.email || '',
-          avatarUrl: firebaseUser.photoURL || undefined
+          avatarURL: firebaseUser.photoURL || undefined
         });
       } else {
         setUser(null);

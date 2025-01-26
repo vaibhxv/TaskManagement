@@ -5,7 +5,7 @@ export interface User {
   id: string;
   name: string;
   email: string;
-  photoURL?: string;
+  avatarURL?: string;
 }
 
 export interface Task {
