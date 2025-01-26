@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+.circle-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.circle-bg::before,
+.circle-bg::after {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border: 80px solid rgba(139, 92, 246, 0.1);
+  z-index: 0;
+}
+
+.circle-bg::before {
+  top: -200px;
+  right: -200px;
+}
+
+.circle-bg::after {
+  bottom: -200px;
+  left: -200px;
+}
+
